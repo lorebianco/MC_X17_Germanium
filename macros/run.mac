@@ -1,0 +1,20 @@
+# Macro file for MC_Germanium in batch mode
+#
+# Change the default number of workers (in multi-threading mode):
+/run/numberOfThreads 16
+#
+# Initialize kernel:
+/run/initialize
+#
+# Set mode and beam:
+/MC_Germanium/myGun/BeamType 0
+/MC_Germanium/myGun/radiusSpread 3 cm
+/MC_Germanium/myGun/radiusCircle 3 cm
+#
+# Set primary gamma energy:
+/MC_Germanium/myGun/meanEnergy 18.1 MeV
+/MC_Germanium/myGun/sigmaEnergy 10. keV
+#
+# Finally:
+/run/printProgress 100
+/run/beamOn 1000
